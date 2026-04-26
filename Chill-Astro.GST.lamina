@@ -1,0 +1,30 @@
+{
+  "Metadata": {
+    "Name": "GST Calculator",
+    "Author": "Chill-Astro Software",
+    "Version": "1.0",
+    "Description": "Calculate GST Amount and Total Price",
+    "Repo": "https://github.com/Chill-Astro/Lamina-Modules-Repo"
+  },
+  "UI": {
+    "Formula": "Total = Price + (Price * GST%)",
+    "Inputs": [
+      { 
+        "Header": "Net Price", 
+        "Label": "Amount before tax", 
+        "Key": "price", 
+        "Placeholder": "100.0" 
+      },
+      { 
+        "Header": "GST Percentage", 
+        "Label": "Tax Rate (%)", 
+        "Key": "tax_rate", 
+        "Placeholder": "18" 
+      }
+    ]
+  },
+  "Logic": {
+    "Output": "'GST Amount: ' + (price * tax_rate / 100) + ' | Total Price: ' + (price + (price * tax_rate / 100))",
+    "Error": "Please enter valid numbers for price and rate."
+   }
+}
