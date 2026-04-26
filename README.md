@@ -1,113 +1,57 @@
-<p align="center">
   <kbd>    
-    <img alt="Lamina Promo" src="https://github.com/user-attachments/assets/09a1d838-7571-4929-82a4-19c88c12889e" />
+    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f472c58c-c277-4f85-83d0-82c2ecdcc713" />
   </kbd>
 </p>
 
 <div align="center">
 
-This is Where Modules for Lamina ✦ are Stored! These Moduls are Loaded through Dynamo Scripties Loader
-
-Get Modules for Lamina ✦ [here](https://github.com/Chill-Astro/Lamina-Modules-Repo).
-
-Get Lamina ✦ [here](https://github.com/Chill-Astro/Lamina-Calculator).
-
-For Maximum Reach, ensure to Fork the Above Mentioned Repo and I will add you here!
+A Simple GST Calculator for Lamina ✦ ! This is for v11.26100.16.0 BETA and Higher.
 
 </div>
 
-## WHAT IS DYNAMO???????
+---
 
-Dynamo is a Dynamic Scriptie Loader. Think of MODS in a Game, or Magisk Modules.
+## Installation :
 
-Yes that's right! An Importer of Math Scripts. Now you can Program her without Proper Coding Skills!
+- Open Menu > Scroll Down > Press "Add" 
+- Open `Chill-Astro.GST.lamina`
 
-Check for Details [here!](https://github.com/Chill-Astro/Lamina-Dynamo-Scripties-Loader)
-
-For Maximum Reach, ensure to Fork the Above Mentioned Repo and I will add you to my Modules!
+Enjoy! :)
 
 ---
 
-## The Basic Structure for a .lamina file :
-
-- A `.lamina` is Essentially a .json file.
-  
-- Structure :
-
-        
-      {
-        "Metadata": {
-          "Name": "", // This is What your Module Shows Up!
-          "Author": "", // Write your Username.
-          "Version": "", // This is the Version of your Scriptie.
-          "Description": "", //
-          "Repo": "https://github.com/yourlink"
-        },
-        "UI": {
-          "Formula": "", // Example y = mx + c
-          "Inputs": [
-            { "Header": "Input Label", "Placeholder": "0.0", "Key": "var_name" } // Add as many as you like.
-          ]
-        },
-        "Logic": {
-          "Output": "NCalc math string using [var_name]", // Your Output.
-          "Error": "Message if math fails" // Your Error.
-        }
-      }
-
-- Example :
+## Module Code :
 
       {
         "Metadata": {
-          "Name": "Quadratic Equation Demo",
+          "Name": "GST Calculator",
           "Author": "Chill-Astro Software",
           "Version": "1.0",
-          "Description": "Solves ax² + bx + c = 0",
+          "Description": "Calculate GST Amount and Total Price",
           "Repo": "https://github.com/Chill-Astro/Lamina-Modules-Repo"
         },
         "UI": {
-          "Formula": "x = [-b ± √(b² - 4ac)] / 2a",
+          "Formula": "Total = Price + (Price * GST%)",
           "Inputs": [
             { 
-              "Label": "Coefficient a", 
-              "Key": "a", 
-              "Header" : "Enter A",
-              "Placeholder": "1.0" 
+              "Header": "Net Price", 
+              "Label": "Amount before tax", 
+              "Key": "price", 
+              "Placeholder": "100.0" 
             },
             { 
-              "Label": "Coefficient b", 
-              "Key": "b", 
-              "Header" : "Enter B",
-              "Placeholder": "0.0" 
-            },
-            { 
-              "Label": "Coefficient c", 
-              "Key": "c", 
-              "Header" : "Enter C",
-              "Placeholder": "0.0" 
+              "Header": "GST Percentage", 
+              "Label": "Tax Rate (%)", 
+              "Key": "tax_rate", 
+              "Placeholder": "18" 
             }
           ]
         },
         "Logic": {
-          "Output": "'x1 = ' + ((-b + Sqrt(Pow(b, 2) - 4*a*c)) / (2*a)) + ' | x2 = ' + ((-b - Sqrt(Pow(b, 2) - 4*a*c)) / (2*a))",
-          "Error": "Invalid Input (Check Discriminant)"
+          "Output": "'GST Amount: ' + (price * tax_rate / 100) + ' | Total Price: ' + (price + (price * tax_rate / 100))",
+          "Error": "Please enter valid numbers for price and rate."
          }
       }
-
-
----
-
-## Contributing :
-
-- Fork [Lamina ✦ Modules Template](https://github.com/Chill-Astro/Lamina-Modules-Template).
-- Sample Code is Given. Modify as you Need.
-- I will add you to the Lamina ✦ Modules Repo
-
----
-
-## HALL OF FAME MODULES 👍 : 
-
-// Will Add Modules Here!
 
 ---
 
@@ -116,7 +60,7 @@ For Maximum Reach, ensure to Fork the Above Mentioned Repo and I will add you to
 Please be aware: There are fraudulent repositories on GitHub that are cloning this project's name and using AI-generated readmes, but they contain **completely random and unrelated files in each release**. These are NOT official versions of this project.
 
 **ALWAYS ensure you are downloading or cloning this project ONLY from its official and legitimate source:**
-`https://github.com/Chill-Astro/Lamina-Modules-Repo`
+`https://github.com/Chill-Astro/Lamina-GST-Module`
 
 I am trying my best to report these people.
 
