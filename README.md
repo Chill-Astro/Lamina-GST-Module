@@ -1,11 +1,11 @@
   <kbd>    
-    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f472c58c-c277-4f85-83d0-82c2ecdcc713" />
+    <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5c7396e3-3262-4ee8-a515-21a4c48224e6" />
   </kbd>
 </p>
 
 <div align="center">
 
-A Simple GST Calculator for Lamina ✦ ! This is for v11.26100.16.0 BETA and Higher.
+A Simple GST Calculator for Lamina ✦ ! This is for v11.28000.16.0 and Higher.
 
 </div>
 
