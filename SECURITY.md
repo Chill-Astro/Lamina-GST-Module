@@ -27,7 +27,7 @@
 **If your download contains any of the following, DELETE IT IMMEDIATELY:**
 
 * **Suspicious Windows Executables:** Files ending in `.exe`, `.bat`, or `.dll` (e.g., `luau.exe`, `StartApp.bat`).
-* **Compressed Archives:** This project is distributed as a **SOURCE CODE ZIP**, never as a `.zip` or `.7z` containing Windows binaries.
+* **Compressed Archives:** This project is distributed as a **LAMINA**, never as a `.zip` or `.7z` containing Windows binaries.
 * **Hidden Scripts:** Text files like `asm.txt` used to execute malicious code on your PC.
 * The Following Folder Structure is used by Malware (Shown in a VM) :
 
